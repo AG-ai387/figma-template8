@@ -1,9 +1,9 @@
-import React from 'react'
+
 
 const Footer = () => {
   return (
     <div>
-        <footer className="bg-white py-12 px-8 font-sans tracking-wide">
+        <footer className="bg-white py-12 px-8 font-sans tracking-wide ">
       <div className="grid max-sm:grid-cols-1 lg:grid-cols-3 items-center gap-8">
         
         

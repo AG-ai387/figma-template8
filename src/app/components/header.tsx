@@ -1,4 +1,4 @@
-import React from "react";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,19 +7,22 @@ import Link from "next/link";
 const Header = () => {
   return (
     <div className="w-[full] h-[203px]">
+
+      
       <div className="w-[full] h-[45px] bg-black text-white">
-        <div>
+        
           <h1 className="font-[Inter] font-normal  text-[13px] pl-[260px]">
             Free Shipping On All Orders Over $50
           </h1>
-        </div>
+        
+        
         <div className="flex justify-center gap-10">
           <h1 className="font-[Inter] font-normal">English</h1>
-          <h1 className="font-[Inter] font-normal">Faqs</h1>
+          <Link href="/faq"><h1 className="font-[Inter] font-normal">Faqs</h1></Link>
           <h1 className="font-[Inter] font-normal">Neeed Help</h1>
         </div>
-      </div>
-
+     
+       
       <div className="w-[full] h-[84px] bg-gray-100 flex">
         <div className=" pl-[150px] pt-[22px]">
           <Image
@@ -47,7 +50,7 @@ const Header = () => {
             <Link href="/"><li>Home</li></Link>
             <li>Shop</li>
             <Link href="/products"><li>Product</li></Link>
-            <li>Pages</li>
+            <Link href="/contact"><li>Contact</li></Link>
             <Link href="/about"><li>About</li></Link>
        
         
@@ -70,6 +73,7 @@ const Header = () => {
 
 
 
+    </div>
     </div>
   );
 };
